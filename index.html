@@ -91,7 +91,7 @@ nav.over-dark{
   font-size:.62rem;
   letter-spacing:.14em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:var(--body);
   text-decoration:none;
   transition:color .2s;
 }
@@ -99,12 +99,12 @@ nav.over-dark{
 nav.over-dark .nav-mark{color:var(--off)}
 nav.over-dark .nav-right a{color:rgba(248,247,244,.5)}
 nav.over-dark .nav-right a:hover{color:var(--indigo)}
-nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
+nav.over-dark .nav-status{color:rgba(248, 247, 244, 0.824)}
 .nav-status{
   display:flex;align-items:center;gap:.5rem;
   font-family:var(--mono);
   font-size:.62rem;
-  color:var(--muted);
+  color:var(--body);
   letter-spacing:.1em;
   transition:color .3s;
 }
@@ -293,7 +293,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   color:var(--body);
   line-height:1.75;
   max-width:520px;
-  margin-bottom:2.8rem;
+  margin-bottom:1.8rem;
   border-left:2px solid var(--indigo);
   padding-left:1.4rem;
 }
@@ -304,6 +304,39 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 }
 
 .hero-ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+
+/* ─── HERO KPI STRIP ─────────────────────────────────────── */
+.hero-kpis{
+  display:flex;
+  gap:0;
+  margin-bottom:2.2rem;
+  border:1px solid var(--rule);
+  width:fit-content;
+}
+.hero-kpi{
+  padding:.9rem 1.6rem;
+  border-right:1px solid var(--rule);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:.25rem;
+  min-width:90px;
+}
+.hero-kpi:last-child{border-right:none}
+.hk-n{
+  font-family:var(--display);
+  font-size:2rem;
+  color:var(--indigo);
+  line-height:1;
+}
+.hk-l{
+  font-family:var(--mono);
+  font-size:.55rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+}
 .btn{
   font-family:var(--mono);
   font-size:.68rem;
@@ -322,7 +355,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 }
 .btn-solid:hover{background:var(--indigo);border-color:var(--indigo)}
 .btn-line{
-  background:transparent;
+  background:var(--white);
   color:var(--ink);
   border-color:var(--rule2);
 }
@@ -331,8 +364,8 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 /* ─── APPROACH ───────────────────────────────────────────── */
 #approach{
   padding:8rem 0;
-  background:var(--ink);
-  color:var(--off);
+  background:var(--off);
+  color:var(--body);
   position:relative;
   overflow:hidden;
 }
@@ -353,15 +386,16 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 }
 .sec-eyebrow{
   font-family:var(--mono);
-  font-size:.62rem;
+  font-size:.80rem;
   letter-spacing:.2em;
   text-transform:uppercase;
   color:var(--indigo);
+  font-weight:700;
 }
 .sec-title{
   font-family:var(--display);
   font-size:clamp(2.8rem,4.5vw,5rem);
-  color:var(--white);
+  color:var(--ink);
   line-height:.95;
   letter-spacing:.01em;
 }
@@ -370,28 +404,29 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:0;
-  border:1px solid rgba(255,255,255,.08);
+  border:1px solid var(--rule);
 }
 .principle{
   padding:3rem 2.5rem;
-  border-right:1px solid rgba(255,255,255,.08);
+  border-right:1px solid var(--rule);
   position:relative;
 }
 .principle:last-child{border-right:none}
 /* ghost numbers removed */
 .p-tag{
   font-family:var(--mono);
-  font-size:.6rem;
+  font-size:.75rem;
   letter-spacing:.16em;
   text-transform:uppercase;
   color:var(--indigo);
+  font-weight:700;
   margin-bottom:1rem;
   display:block;
 }
 .p-head{
   font-family:var(--display);
   font-size:1.8rem;
-  color:var(--white);
+  color:var(--ink);
   line-height:1.1;
   margin-bottom:1rem;
   letter-spacing:.02em;
@@ -401,20 +436,21 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   font-size:1.0rem;
   font-style:italic;
   font-weight:300;
-  color:rgba(248,247,244,.6);
+  color:var(--body);
   line-height:1.8;
 }
 .p-body em{
   font-style:normal;
-  color:var(--off);
+  font-weight:600;
+  color:var(--ink);
 }
 .p-proof{
   margin-top:1.4rem;
   font-family:var(--mono);
   font-size:.62rem;
-  color:rgba(255,255,255,.25);
+  color:var(--body);
   letter-spacing:.06em;
-  border-top:1px solid rgba(255,255,255,.07);
+  border-top:1px solid var(--rule);
   padding-top:1rem;
 }
 
@@ -498,7 +534,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 .we-date{
   font-family:var(--mono);
   font-size:.62rem;
-  color:var(--muted);
+  color:var(--body);
   letter-spacing:.06em;
   display:block;
   margin-bottom:.4rem;
@@ -538,9 +574,10 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 }
 .we-role{
   font-family:var(--mono);
-  font-size:.68rem;
+  font-size:.75rem;
   letter-spacing:.1em;
   color:var(--indigo);
+  font-weight:700;
   text-transform:uppercase;
   margin-bottom:.4rem;
 }
@@ -595,7 +632,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   padding:.22rem .65rem;
   background:var(--off);
   border:1px solid var(--rule);
-  color:var(--muted);
+  color:var(--body);
   transition:all .15s;
 }
 .we-tag:hover{background:var(--ink);color:var(--white);border-color:var(--ink)}
@@ -645,14 +682,14 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   font-size:.6rem;
   letter-spacing:.1em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:var(--indigo);
   text-decoration:none;
   white-space:nowrap;
   flex-shrink:0;
   transition:color .18s;
   padding-top:.15rem;
 }
-.wp-link:hover{color:var(--indigo)}
+.wp-link:hover{color:var(--ink)}
 .wp-desc{
   font-family:var(--serif);
   font-size:.92rem;
@@ -664,6 +701,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   font-family:var(--mono);
   font-size:.62rem;
   color:var(--indigo);
+  font-weight:700;
   letter-spacing:.08em;
   display:flex;align-items:center;gap:.5rem;
   margin-bottom:.7rem;
@@ -676,7 +714,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   padding:.18rem .5rem;
   background:var(--white);
   border:1px solid var(--rule);
-  color:var(--muted);
+  color:var(--body);
   letter-spacing:.04em;
 }
 
@@ -730,13 +768,13 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   font-size:.58rem;
   letter-spacing:.12em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:var(--body);
 }
 .dt-narrative{
   font-family:var(--serif);
   font-style:italic;
   font-size:.82rem;
-  color:var(--muted);
+  color:var(--body);
   line-height:1.65;
   margin-top:.6rem;
 }
@@ -774,7 +812,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 /* ─── CONTACT ────────────────────────────────────────────── */
 #contact{
   padding:8rem 0 6rem;
-  background:var(--white);
+  background:var(--off);
 }
 
 .contact-grid{
@@ -800,7 +838,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   font-family:var(--serif);
   font-style:italic;
   font-size:1.05rem;
-  color:var(--muted);
+  color:var(--body);
   line-height:1.8;
   max-width:420px;
   margin-bottom:2.8rem;
@@ -814,6 +852,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
 }
 .c-item{
   display:flex;align-items:center;gap:1.4rem;
+  background:var(--white);
   padding:1.3rem 1.6rem;
   border-bottom:1px solid var(--rule);
   text-decoration:none;
@@ -827,8 +866,8 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   border:1px solid var(--rule);
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
-  background:var(--white);
-  color:var(--muted);
+  background:var(--off);
+  color:var(--body);
   transition:all .18s;
 }
 .c-item:hover .c-icon{
@@ -841,7 +880,7 @@ nav.over-dark .nav-status{color:rgba(248,247,244,.4)}
   font-size:.6rem;
   letter-spacing:.14em;
   text-transform:uppercase;
-  color:var(--muted);
+  color:var(--body);
   display:block;
   margin-bottom:.15rem;
 }
@@ -926,7 +965,7 @@ footer{
 
 /* Standardise all main sections to identical vertical padding */
 #approach,#work,#research,#depth,#contact{
-  padding-top:4rem;
+  padding-top:5rem;
   padding-bottom:4rem;
 }
 #hero{
@@ -979,14 +1018,15 @@ footer{
 
 <!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-mark">SP<span>.</span></a>
+  <a href="#hero" class="nav-mark"><strong>SP</strong><span>.</span></a>
   <div class="nav-right">
-    <div class="nav-status"><span class="status-dot"></span>Open to roles</div>
-    <a href="#approach">Approach</a>
-    <a href="#work">Work</a>
-    <a href="#research">Research</a>
-    <a href="#depth">Skills</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-status"><span class="status-dot"></span><strong>OPEN TO ROLES</strong></div>
+    <a href="#approach"><strong>Approach</strong></a>
+    <a href="#work"><strong>Work</strong></a>
+    <a href="#research"><strong>Research</strong></a>
+    <a href="#depth"><strong>Skills</strong></a>
+    <a href="#contact"><strong>Contact</strong></a>
+    <a href="resume.pdf" download style="color:var(--indigo);border:1px solid rgba(67,56,245,.3);padding:.3rem .8rem;"><strong>Resume ↓</strong></a>
   </div>
 </nav>
 
@@ -1002,11 +1042,31 @@ footer{
         <span class="name-line line2" id="name-line-2">PANICKER</span>
       </h1>
       <p class="hero-bridge sr d3">
-        Four years at Mu Sigma learning what data problems actually cost a business.
-        Two years at Northeastern learning to research and build the tools that solve them.
-        Together, they define how I work.
+        I solve data problems at enterprise scale and build AI systems that hold up in production.
       </p>
-      <div class="hero-ctas sr d4">
+      <div class="hero-kpis sr d4">
+        <div class="hero-kpi">
+            <span class="hk-n">4</span>
+            <span class="hk-l">Years industry</span>
+        </div>
+        <div class="hero-kpi">
+            <span class="hk-n">5</span>
+            <span class="hk-l">Industry projects</span>
+        </div>
+        <div class="hero-kpi">
+            <span class="hk-n">6</span>
+            <span class="hk-l">Research projects</span>
+        </div>
+        <div class="hero-kpi">
+            <span class="hk-n">2</span>
+            <span class="hk-l">Published papers</span>
+        </div>
+        <div class="hero-kpi">
+            <span class="hk-n">10</span>
+            <span class="hk-l">Team size led</span>
+        </div>
+        </div>
+      <div class="hero-ctas sr d5">
         <a href="#work" class="btn btn-solid">See my work</a>
         <a href="#contact" class="btn btn-line">Get in touch</a>
       </div>
@@ -1034,7 +1094,7 @@ footer{
           A Device ID bug in the client's app had been confidently wrong - reported, trusted, and acted on - until a cross-check between two data sources exposed it. The same physical device was being counted multiple times in reported metrics. Fixing it didn't just clean the data. It restored the integrity of every decision built on top of it. 
           <em>Most people validate the model. I start by validating what feeds it.</em>
         </p>
-        <div class="p-proof">Ref: Device Identifier Persistence System · Decision Scientist, Mu Sigma, 2022</div>
+        <div class="p-proof">In practice: Device Identifier Persistence System · Decision Scientist, Mu Sigma, 2022</div>
       </div>
       <div class="principle sr d2">
         <span class="p-tag">Problem Framing Instinct</span>
@@ -1042,7 +1102,7 @@ footer{
         <p class="p-body">
           MAD growth wasn't keeping pace with new activations. Something was eroding the base that the current metrics weren't capturing. Before touching any data, I had to decompose what "inactive" actually meant - was the device sitting unused in a room? Was inactivity seasonal, sector-specific, or a tenant walking away entirely? Each answer pointed to a different response. I worked with senior leadership to define the thresholds: dark at 28 days, churned at 90, reactivated if usage resumed after either. That framework gave customer success managers a precise enough picture to reach the right tenants and ask the right questions. <em>I work backwards until I find a question worth answering. The right question doesn't just produce an insight - it produces an action.</em>
         </p>
-        <div class="p-proof">Ref: Dark Devices Analysis · Decision Scientist, Mu Sigma, 2021</div>
+        <div class="p-proof">In practice: Dark Devices Analysis · Decision Scientist, Mu Sigma, 2021</div>
       </div>
       <div class="principle sr d3">
         <span class="p-tag">Applied AI Instinct</span>
@@ -1050,7 +1110,7 @@ footer{
         <p class="p-body">
           Every deployed voice assistant I used had the same problem - it was listening for silence, not for meaning. Fixed-threshold VAD treats every utterance identically, regardless of what the user is actually doing. I built a system to fix that: an intent-conditioned ensemble that classifies each utterance as transactional, informational, or reflective, then adapts its thresholds and scoring weights accordingly. If you're working through a decision out loud, the system gives you space. If the ensemble score crosses 0.85, it fires immediately - no point making the user wait for a threshold that no longer needs to be met. A model that's technically right but makes the user wait has still failed. <em> AI isn't just about what the system gets right - it's about what the user actually experiences.</em>
         </p>
-        <div class="p-proof">Ref: Semantic Turn Detection for Voice AI · AI Capstone CS6170, Northeastern University, 2026</div>
+        <div class="p-proof">In practice: Semantic Turn Detection for Voice AI · AI Capstone CS6170, Northeastern University, 2026</div>
       </div>
     </div>
   </div>
@@ -1081,7 +1141,7 @@ footer{
           <div class="we-role">Graduate Teaching Assistant</div>
           <div class="we-org">Northeastern University</div>
           <p class="we-body">
-            Teaching assistant for DS2500 across all four semesters of my MS. Beyond labs, office hours, and grading, I restructured homework assignments into performance challenges where students were given a real dataset and evaluated on how well their solution performed - a format the department adopted and continued after I introduced it. I also redesigned the project structure so each student owned a hypothesis, sourced data from non-Kaggle platforms, and conducted independent analysis within their team.
+            Teaching assistant for DS2500: Data Science Fundamentals across all four semesters of my MS. Beyond labs, office hours, and grading, I restructured homework assignments into performance challenges where students were given a real dataset and evaluated on how well their solution performed - a format the department adopted and continued after I introduced it. I also redesigned the project structure so each student owned a hypothesis, sourced data from non-Kaggle platforms, and conducted independent analysis within their team.
           </p>
           <div class="we-bridge">
             <span class="wb-icon">→</span>
@@ -1270,7 +1330,7 @@ footer{
                 <a href="https://github.com/shrutipanicker2810/wassa2024-empathy-emotion-detection" target="_blank" class="wp-link">GitHub ↗</a>
               </div>
               <p class="wp-desc">Detecting empathy in human conversation is harder than detecting sentiment - the linguistic markers are subtler and the concept itself is harder to codify. I fine-tuned BERT for regression on the WASSA 2024 shared task, predicting empathy, emotional polarity, and emotional intensity in conversation turns. A regression head on the CLS token representation was fine-tuned across all layers on 11,167 training examples, with N-gram DAN and CNN baselines built alongside to isolate the contribution of pre-trained contextual representations. Trained on Northeastern's Explorer HPC cluster via SLURM.</p>
-              <div class="wp-impact">BERT achieved 0.597 average Pearson correlation, marginally exceeding the WASSA 2024 4th place system's 0.595</div>
+              <div class="wp-impact">BERT achieved 0.597 average Pearson correlation — matching top-4 performance on the WASSA 2024 shared task</div>
               <div class="wp-stack">
                 <span class="wp-tech">PyTorch</span><span class="wp-tech">BERT</span><span class="wp-tech">HuggingFace</span><span class="wp-tech">GloVe</span><span class="wp-tech">SLURM</span><span class="wp-tech">HPC</span><span class="wp-tech">NLP</span>
               </div>
@@ -1278,7 +1338,10 @@ footer{
             <div class="wp-card sr d3">
               <div class="wp-top">
                 <div class="wp-title">Photomosaic Generator</div>
-                <a href="https://github.com/shrutipanicker2810/optimized-mosaic-generator" target="_blank" class="wp-link">GitHub ↗</a>
+                <div style="display:flex;gap:.6rem;align-items:center;">
+                  <a href="https://huggingface.co/spaces/shrutipanicker2810/optimized-mosaic-generator" target="_blank" class="wp-link" style="color:var(--indigo)">Live Demo ↗</a>
+                  <a href="https://github.com/shrutipanicker2810/optimized-mosaic-generator" target="_blank" class="wp-link">GitHub ↗</a>
+                </div>
               </div>
               <p class="wp-desc">A photomosaic generator that replaces per-image tile reloading with a session-level cache and per-pixel color matching with vectorized NumPy operations. The cache loads the 14,389-tile library once and reuses it throughout the session, eliminating redundant I/O. The vectorized matching computes color distances across the entire tile library simultaneously rather than iteratively. Both optimizations compound: less I/O overhead, faster matching, same output quality. Deployed on Hugging Face Spaces with an interactive Gradio interface supporting 16×16, 32×32, and 64×64 grid sizes with real-time comparison against the original implementation.</p>
               <div class="wp-impact">100–200× efficiency improvement over baseline via tile caching and NumPy vectorization · 0.553 SSIM at 32×32 optimal grid</div>
@@ -1377,7 +1440,6 @@ footer{
           <span class="depth-pill">Power BI DAX</span>
           <span class="depth-pill">C#</span>
           <span class="depth-pill">R</span>
-          <span class="depth-pill">Java</span>
         </div>
       </div>
 
@@ -1461,12 +1523,12 @@ footer{
     <div class="contact-grid">
       <div class="cg-left sr">
         <h2 class="contact-headline">
-          LET'S
-          <span class="ch-accent">WORK</span>
-          TOGETHER.
+          READY TO
+          <span class="ch-accent">MAKE</span>
+          AN IMPACT.
         </h2>
         <p class="contact-sub">
-          Open to Data Science, Data Engineering, and ML/AI Engineering roles.
+          Open to Data Science, Data Engineering, and ML/AI Engineering roles. Based in Boston, MA - open to remote roles as well. If you're working on something interesting, I'd love to hear about it.
         </p>
         <div class="contact-actions">
           <a href="mailto:shrutipanicker2810@gmail.com" class="btn btn-solid">Send an email</a>
@@ -1479,7 +1541,7 @@ footer{
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
           </div>
           <div>
-            <span class="c-label">Email</span>
+            <span class="c-label"><strong>Email</strong></span>
             <span class="c-val">shrutipanicker2810@gmail.com</span>
           </div>
         </a>
@@ -1488,7 +1550,7 @@ footer{
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </div>
           <div>
-            <span class="c-label">LinkedIn</span>
+            <span class="c-label"><strong>LinkedIn</strong></span>
             <span class="c-val">linkedin.com/in/shruti-panicker</span>
           </div>
         </a>
@@ -1497,7 +1559,7 @@ footer{
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </div>
           <div>
-            <span class="c-label">GitHub</span>
+            <span class="c-label"><strong>GitHub</strong></span>
             <span class="c-val">@shrutipanicker2810</span>
           </div>
         </a>
@@ -1507,7 +1569,7 @@ footer{
 </section>
 
 <footer>
-  <span class="ft-l">&copy; 2025 Shruti Panicker</span>
+  <span class="ft-l">&copy; 2026 Shruti Panicker</span>
 </footer>
 
 <script>
@@ -1587,7 +1649,7 @@ window.addEventListener('load',()=>{
 
 // ── NAV BACKGROUND ───────────────────────────────────────
 const navEl = document.querySelector('nav');
-const darkSections = ['approach','contact'];
+const darkSections = ['contact'];
 function updateNav(){
   const scrollY = window.scrollY;
   // Check if currently over a dark section
