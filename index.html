@@ -1010,6 +1010,44 @@ footer{
   .bound{padding:0 1.2rem}
   section{padding:5rem 0}
 }
+.resume-dropdown{position:relative}
+.resume-btn{
+  font-family:var(--mono);
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  color:var(--indigo);
+  border:1px solid rgba(67,56,245,.3);
+  padding:.3rem .8rem;
+  background:transparent;
+  cursor:pointer;
+}
+.resume-menu{
+  display:none;
+  position:absolute;
+  top:calc(100% + .4rem);
+  right:0;
+  background:var(--white);
+  border:1px solid var(--rule);
+  min-width:180px;
+  z-index:300;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);
+}
+.resume-menu a{
+  display:block;
+  font-family:var(--mono);
+  font-size:.62rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--body) !important;
+  padding:.7rem 1rem;
+  text-decoration:none;
+  border-bottom:1px solid var(--rule);
+  font-weight:700;
+}
+.resume-menu a:last-child{border-bottom:none}
+.resume-menu a:hover{background:var(--off);color:var(--indigo) !important}
+.resume-dropdown:hover .resume-menu{display:block}
 </style>
 </head>
 <body>
@@ -1026,7 +1064,14 @@ footer{
     <a href="#research"><strong>Research</strong></a>
     <a href="#depth"><strong>Skills</strong></a>
     <a href="#contact"><strong>Contact</strong></a>
-    <a href="resume.pdf" download style="color:var(--indigo);border:1px solid rgba(67,56,245,.3);padding:.3rem .8rem;"><strong>Resume ↓</strong></a>
+    <div class="resume-dropdown">
+  <button class="resume-btn">RESUME ↓</button>
+  <div class="resume-menu">
+    <a href="Resume_DS.pdf" download>Data Science & Analytics</a>
+    <a href="Resume_ML_AI.pdf" download>ML & AI</a>
+    <a href="Resume_DE.pdf" download>Data Engineering</a>
+  </div>
+</div>
   </div>
 </nav>
 
@@ -1046,7 +1091,7 @@ footer{
       </p>
       <div class="hero-kpis sr d4">
         <div class="hero-kpi">
-            <span class="hk-n">4</span>
+            <span class="hk-n">3.5+</span>
             <span class="hk-l">Years in industry</span>
         </div>
         <div class="hero-kpi">
@@ -1125,7 +1170,7 @@ footer{
         <h2 class="sec-title" style="color:var(--ink);margin-top:.5rem">WORK</h2>
       </div>
       <div class="wi-right">
-        Four years building analytics systems that Fortune 20 leadership made decisions from. I know what production data work looks like when the stakes are real.
+        3+ years building analytics systems that Fortune 20 leadership made decisions from. I know what production data work looks like when the stakes are real.
       </div>
     </div>
 
@@ -1141,7 +1186,7 @@ footer{
           <div class="we-role">Graduate Teaching Assistant</div>
           <div class="we-org">Northeastern University</div>
           <p class="we-body">
-            Teaching assistant for DS2500: Data Science Fundamentals across all four semesters of my MS. Beyond labs, office hours, and grading, I restructured homework assignments into performance challenges where students were given a real dataset and evaluated on how well their solution performed - a format the department adopted and continued after I introduced it. I also redesigned the project structure so each student owned a hypothesis, sourced data from non-Kaggle platforms, and conducted independent analysis within their team.
+            Teaching assistant for DS2500: Intermediate Programming with Data across all four semesters of my MS. Beyond labs, office hours, and grading, I restructured homework assignments into performance challenges where students were given a real dataset and evaluated on how well their solution performed - a format the department adopted and continued after I introduced it. I also redesigned the project structure so each student owned a hypothesis, sourced data from non-Kaggle platforms, and conducted independent analysis within their team.
           </p>
           <div class="we-bridge">
             <span class="wb-icon">→</span>
