@@ -1468,7 +1468,7 @@ footer{
             <span class="we-tag">HPC / SLURM</span>
             <span class="we-tag">Hugging Face</span>
           </div>
-
+<!-- 
           <div class="we-projects">
             <div class="wp-card sr d1">
               <div class="wp-top">
@@ -1480,7 +1480,21 @@ footer{
               <div class="wp-stack">
                 <span class="wp-tech">LLM Scoring</span><span class="wp-tech">VAD</span><span class="wp-tech">Utterance Classification</span><span class="wp-tech">Llama 3.3 70B</span><span class="wp-tech">GPT-2</span><span class="wp-tech">FastAPI</span><span class="wp-tech">Voice AI</span><span class="wp-tech">HCI Research</span>
               </div>
+            </div> -->
+
+            <div class="we-projects">
+            <div class="wp-card sr d1">
+              <div class="wp-top">
+                <div class="wp-title">Semantic Turn Detection for Voice AI</div>
+                <a href="https://github.com/shrutipanicker2810/semantic-turn-detection-voice-ai" target="_blank" class="wp-link">GitHub ↗</a>
+              </div>
+              <p class="wp-desc">Most deployed voice AI systems use fixed-threshold silence detection - a design that ignores what the user is actually saying. I built an intent-conditioned turn-detection system that classifies each utterance as transactional, informational, or reflective, then dynamically adapts silence thresholds and scoring weights accordingly. The system runs a three-signal ensemble on Groq-hosted Llama-3.3-70B: a syntactic end-of-utterance scorer, an intent classifier, and a context-aware turn-completion scorer, combined into a weighted decision with an early-fire override that responds immediately when an utterance is unambiguously complete. Silero VAD handles speech detection and Groq Whisper handles transcription, with the full pipeline deployed in real time on Railway. To isolate what each layer contributes, the system was evaluated as a three-condition ablation - VAD-only, syntactic EOS, and the full intent-conditioned ensemble - in a within-subjects study with 18 participants across six counterbalanced orderings.</p>
+              <div class="wp-impact">Naturalness 4.31→6.00/7 · Frustration 3.08→1.53/7 vs. VAD-only baseline · Trust 5.70/7 (no baseline collected)</div>
+              <div class="wp-stack">
+                <span class="wp-tech">Llama 3.3 70B</span><span class="wp-tech">Groq</span><span class="wp-tech">Silero VAD</span><span class="wp-tech">Whisper</span><span class="wp-tech">Railway</span><span class="wp-tech">Utterance Classification</span><span class="wp-tech">Voice AI</span><span class="wp-tech">HCI Research</span>
+              </div>
             </div>
+
             <div class="wp-card sr d2">
               <div class="wp-top">
                 <div class="wp-title">Empathy Detection · WASSA 2024</div>
@@ -1492,7 +1506,19 @@ footer{
                 <span class="wp-tech">PyTorch</span><span class="wp-tech">BERT</span><span class="wp-tech">HuggingFace</span><span class="wp-tech">GloVe</span><span class="wp-tech">SLURM</span><span class="wp-tech">HPC</span><span class="wp-tech">NLP</span>
               </div>
             </div>
+
             <div class="wp-card sr d3">
+              <div class="wp-top">
+                <div class="wp-title">Interactive Business Intelligence Dashboard</div>
+                <a href="https://huggingface.co/spaces/shrutipanicker/interactive-business-intelligence-dashboard" target="_blank" class="wp-link">Live Demo ↗</a>
+              </div>
+              <p class="wp-desc">Built and deployed a self-serve BI dashboard (Python, Gradio) that lets non-technical users upload raw CSV/Excel data and get summary statistics, correlation analysis, and interactive filtering without writing code, hosted publicly on Hugging Face Spaces. Automated insight generation with configurable group-ranking and z-score outlier detection, surfacing anomalies and top performers without manual analysis.</p>
+              <div class="wp-stack">
+                <span class="wp-tech">Python</span><span class="wp-tech">Gradio</span><span class="wp-tech">Data Analysis</span><span class="wp-tech">Hugging Face</span>
+              </div>
+            </div>
+
+            <div class="wp-card sr d4">
               <div class="wp-top">
                 <div class="wp-title">Photomosaic Generator</div>
                 <div style="display:flex;gap:.6rem;align-items:center;">
@@ -1506,7 +1532,7 @@ footer{
                 <span class="wp-tech">Python</span><span class="wp-tech">NumPy</span><span class="wp-tech">SciPy</span><span class="wp-tech">Pillow</span><span class="wp-tech">Gradio</span><span class="wp-tech">Hugging Face</span>
               </div>
             </div>
-            <div class="wp-card sr d4">
+            <div class="wp-card sr d5">
               <div class="wp-top">
                 <div class="wp-title">Multi-Agent Combat Simulation with PPO and Genetic Evolution</div>
                 <a href="https://github.com/shrutipanicker2810/royal-rumble-simulation" target="_blank" class="wp-link">GitHub ↗</a>
@@ -1667,6 +1693,16 @@ footer{
           <span class="depth-pill">Tableau</span>
           <span class="depth-pill">Azure Data Explorer</span>
           <span class="depth-pill">Scuba Analytics</span>
+        </div>
+      </div>
+
+      <div class="depth-tier tier-working sr d5">
+        <div class="dt-label">
+          <div class="dt-tier-name">Certifications</div>
+        </div>
+        <div class="dt-content">
+          <span class="depth-pill">AWS Certified Machine Learning Engineer Associate (Credential ID - 8a34b25eb698433dab2ceef1ff2c0ccb)</span>
+          <span class="depth-pill">AWS Certified Cloud Practitioner (Credential ID - Y9C4WRJCBJVEQ1KL)</span>
         </div>
       </div>
 
